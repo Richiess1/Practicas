@@ -1,6 +1,6 @@
-import NotificationInterface
+from NotificationInterface import NotificationInterface
 
 class AbstractNotification(NotificationInterface):
-    def _init_(self, name:str):
+    def __init__(self, name:str):
         self.name = name
 

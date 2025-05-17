@@ -1,11 +1,10 @@
-import AbstractNotification
+from AbstractNotification import AbstractNotification
 
 class WhatsappNotification(AbstractNotification):
-    def _init_(self, name, phone, area):
-        super()._init_(name)
-        self.name = name
+    def __init__(self, name, phone, area):
+        super().__init__(name)
         self.phone = phone
         self.area = area
 
-    def send(self, message):
-        print(f"Enviado a {name} con telefono {phone} y codigo de area {area} (WhatsApp)")
+    def send(self):
+        print(f"Enviado a {self.name} con telefono {self.phone} y codigo de area {self.area} (WhatsApp)")

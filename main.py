@@ -1,16 +1,15 @@
 #controlador general
-import WhatsappNotification
-import SmsNotification
-import EmailNotification 
+from EmailNotification import EmailNotification 
+from SmsNotification import SmsNotification
+from WhatsappNotification import WhatsappNotification
 
 def controller():
-    email = EmailNotification(name="Ricardo",email="ricardo@gmail.com")
-    whatsApp = WhatsappNotification(name="Ricardo", phone="5623-5623", area="503")
-    sms = SmsNotification(name="Ricardo", phone="5623-5623", area="503")
-
-    email.send("Enviado desde correo")
-    whatsApp.send("Enviado desde WhatsApp")
-    sms.send("Enviado desde SMS")
+    email = EmailNotification("ricardo", "ricardo.com")
+    sms = SmsNotification("ricardo", "56895689", "503")
+    wha = WhatsappNotification("ricardo", "56895689", "503")
+    email.send()
+    sms.send()
+    wha.send()
 
 controller()
 
