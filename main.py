@@ -1,8 +1,6 @@
-
 from EmailNotification import EmailNotification 
 from SmsNotification import SmsNotification
 from WhatsappNotification import WhatsappNotification 
-
 
 def controller():
     email = EmailNotification("ricardo", "ricardo.com")
