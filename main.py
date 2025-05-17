@@ -1,7 +1,8 @@
-#controlador general
+
 from EmailNotification import EmailNotification 
 from SmsNotification import SmsNotification
-from WhatsappNotification import WhatsappNotification
+from WhatsappNotification import WhatsappNotification 
+
 
 def controller():
     email = EmailNotification("ricardo", "ricardo.com")
@@ -12,4 +13,5 @@ def controller():
     wha.send()
 
 controller()
+
 

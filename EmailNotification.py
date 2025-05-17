@@ -5,5 +5,7 @@ class EmailNotification(AbstractNotification):
         super().__init__(name)
         self.email = email
 
+        
     def send(self):
         print(f"Enviado a {self.name} con correo electronico de {self.email} (Email)")
+
