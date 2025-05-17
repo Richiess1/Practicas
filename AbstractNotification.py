@@ -1,4 +1,6 @@
+import NotificationInterface
+
 class AbstractNotification(NotificationInterface):
-    def setReceiver(self, name):
+    def _init_(self, name:str):
         self.name = name
 

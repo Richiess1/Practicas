@@ -1,6 +1,6 @@
 import AbstractNotification
 
-class SmsNotification(AbstractNotification.AbstractNotification):
+class SmsNotification(AbstractNotification):
     def _init_(self, name, phone, area):
         super()._init(name)
         self.phone = phone
