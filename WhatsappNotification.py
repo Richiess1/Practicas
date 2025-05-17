@@ -6,4 +6,6 @@ class WhatsappNotification(AbstractNotification.AbstractNotification):
         self.name = name
         self.phone = phone
         self.area
+
+    def send(self, message):
         print(f"Enviado a {name} con telefono {phone} y codigo de area {area} (WhatsApp)")
