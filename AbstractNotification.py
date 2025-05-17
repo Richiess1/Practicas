@@ -1,5 +1,3 @@
 class AbstractNotification(NotificationInterface):
-    def setReceiver(self): 
-        pass
-    def sent():
-        
+    def _init_(self, name)
+        self.name = name
